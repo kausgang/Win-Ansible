@@ -17,7 +17,7 @@ cd Win-Ansible
 - [Vagrant](https://www.vagrantup.com/)
 - [VirtualBox](https://www.virtualbox.org/)
 
-## Value Proposition
+## Benefits
 - Provides Ansible sandbox environment with all the necessary configuration.
 - Imitates production environment setup
   - No need to disable SSH host key checking.
