@@ -18,11 +18,15 @@ cd Win-Ansible
 - [VirtualBox](https://www.virtualbox.org/)
 
 ## Value Proposition
+- Provides Ansible sandbox environment with all the necessary configuration.
+- Imitates production environment setup
+  - No need to disable SSH host key checking.
+  - No need to supply initial Ansible playbook. 
 - Virtualboxes with customizable resources and settings
-- Create Controller virtual machine
-  - Install Ansible
+- Creates Controller virtual machine
+  - Installs Ansible
 - Create Target machine based on the image requirement
   - Setup passwordless authentication between the controller and target.
 - Setup Target machine as default Ansible host for the Controller machine.
-- Extract privatekey of Controller and Target in *connection-setting* folder (generated after first run)
+- Extracts privatekey of Controller and Target in *connection-setting* folder (generated after first run)
   - Use username = **vagrant** and the private key to login using SSH Client softwares (Putty/MobaXterm) 
