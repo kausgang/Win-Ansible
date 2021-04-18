@@ -23,5 +23,6 @@ cd Win-Ansible
   - Install Ansible
 - Create Target machine based on the image requirement
   - Setup passwordless authentication between the controller and target.
+- Setup Target machine as default Ansible host for the Controller machine.
 - Extract privatekey of Controller and Target 
   - Use username = vagrant and the private key to login using SSH Client softwares (Putty/MobaXterm) 
