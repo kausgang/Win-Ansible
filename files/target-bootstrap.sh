@@ -8,7 +8,8 @@ EOF
 
 echo "[TASK] add the key to authorized_key"
 cat /vagrant_data/files/auth-key >> /home/vagrant/.ssh/authorized_keys 
-chown -R vagrant:vagrant .ssh 
+#chown -R vagrant:vagrant .ssh 
+chown -R vagrant:vagrant /home/vagrant/.ssh 
 rm /vagrant_data/files/auth-key
 
 
