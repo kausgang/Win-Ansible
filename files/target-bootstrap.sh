@@ -10,6 +10,12 @@ echo "[TASK] add the key to authorized_key"
 cat /vagrant_data/files/auth-key >> /home/vagrant/.ssh/authorized_keys 
 #chown -R vagrant:vagrant .ssh 
 chown -R vagrant:vagrant /home/vagrant/.ssh 
+
+# for root - needed for admin tasks
+mkdir .ssh
+cat /vagrant_data/files/auth-key >> /root/.ssh/authorized_keys
+
+
 rm /vagrant_data/files/auth-key
 
 
